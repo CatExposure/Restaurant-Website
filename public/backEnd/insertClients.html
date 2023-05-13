@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Client</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+    <link rel="stylesheet" href="../styles/general.css" defer>
+    <link rel="stylesheet" href="styles/insertClients.css" defer>
+    <script src="scripts/insertClients.js" defer></script>
+</head>
+<section id="topArea">
+  <img id = "backEndLogo" src="images/logo.png">
+  <h1 id = "topAreaText">Perk Up Coffee Bar Faculty View<h1>
+</section>
+<div class="navigation">
+    <a href="home.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Inventory
+      </button>
+      <div class="dropdown-content">
+        <a href="insertInventory.html">Insert Item</a>
+        <a href="updateInventory.html">Update Inventory</a>
+        <a href="searchInventory.html">Search Inventory</a>
+      </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Menu
+        </button>
+        <div class="dropdown-content">
+          <a href="insertMenu.html">Insert Menu Item</a>
+          <a href="updateMenu.html#">Update Menu</a>
+          <a href="searchMenu.html">Search Menu</a>
+        </div>
+      </div>
+  <div class="dropdown">
+    <button class="dropbtn">Faculty
+    </button>
+    <div class="dropdown-content">
+      <a href="insertFaculty.html">Insert Faculty</a>
+      <a href="updateFaculty.html">Update Faculty</a>
+      <a href="searchFaculty.html">Search Faculty</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Clients
+    </button>
+    <div class="dropdown-content">
+      <a href="insertClients.html">Insert Client</a>
+      <a href="updateClients.html">Update Client</a>
+      <a href="searchClients.html">Search Client</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Reservations
+    </button>
+    <div class="dropdown-content">
+      <a href="insertReservation.html">Insert Reservation</a>
+      <a href="updateReservations.html">Update Reservation</a>
+      <a href="searchReservations.html">Search Reservations</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Orders
+    </button>
+    <div class="dropdown-content">
+      <a href="insertOrders.html">Insert Order</a>
+      <a href="updateOrders.html">Update Orders</a>
+      <a href="SearchOrders.html">Search Orders</a>
+    </div>
+  </div>
+  <a href='Signin.html'>Log Out</a>
+</div>
+<body>
+  <section>
+  <form id="InsertClientsForm">
+          <table>
+              <tr>
+                  <th>First Name</th>
+                  <td><input type="text" name="userfirstname" id="userfirstname"
+                  value = ""	/></td><td><span id="errMessageFirstName"></span></td>
+              </tr>
+              <tr>
+                  <th>Last Name</th>
+                  <td><input type="text" name="userlastname" id="userlastname"
+                  value = ""	/></td><td><span id="errMessageLastName"></span></td>
+              </tr>
+              <tr>
+                  <th>Address</th>
+                  <td><input type="text" name="useraddress" id="useraddress"
+                  value = ""	/></td><td><span id="errMessageAddress"></span></td>
+              </tr>
+              <tr>
+                  <th>Phone Number</th>
+                  <td><input type="text" name="userphone" id="userphone"
+                  value = ""	/></td><td><span id="errMessagePhone"></span></td>
+              </tr>
+              <tr>
+                  <th>E-Mail</th>
+                  <td><input type="text" name="useremail" id="useremail"
+                  value = ""	/></td><td><span id="errMessageEmail"></span></td>
+              </tr>
+          </table><br>
+          <input type="submit" name = "thesubmit" value="Insert" class = "button">
+  </form>
+</body>
+</html>

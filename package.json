@@ -1,0 +1,17 @@
+{
+  "name": "lab1",
+  "version": "0.0.0",
+  "description": "lab3",
+  "main": "server.js",
+  "author": {
+    "name": "Andre Newbauer"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "react": "^16.14.0"
+  }
+}

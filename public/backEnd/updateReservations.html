@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Reservation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+    <link rel="stylesheet" href="../styles/general.css" defer>
+    <link rel="stylesheet" href="styles/updateReservation.css" defer>
+    <script src="scripts/updateReservations.js" defer></script>
+</head>
+<section id="topArea">
+  <img id = "backEndLogo" src="images/logo.png">
+  <h1 id = "topAreaText">Perk Up Coffee Bar Faculty View<h1>
+</section>
+<div class="navigation">
+    <a href="home.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Inventory
+      </button>
+      <div class="dropdown-content">
+        <a href="insertInventory.html">Insert Item</a>
+        <a href="updateInventory.html">Update Inventory</a>
+        <a href="searchInventory.html">Search Inventory</a>
+      </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Menu
+        </button>
+        <div class="dropdown-content">
+          <a href="insertMenu.html">Insert Menu Item</a>
+          <a href="updateMenu.html#">Update Menu</a>
+          <a href="searchMenu.html">Search Menu</a>
+        </div>
+      </div>
+  <div class="dropdown">
+    <button class="dropbtn">Faculty
+    </button>
+    <div class="dropdown-content">
+      <a href="insertFaculty.html">Insert Faculty</a>
+      <a href="updateFaculty.html">Update Faculty</a>
+      <a href="searchFaculty.html">Search Faculty</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Clients
+    </button>
+    <div class="dropdown-content">
+      <a href="insertClients.html">Insert Client</a>
+      <a href="updateClients.html">Update Client</a>
+      <a href="searchClients.html">Search Client</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Reservations
+    </button>
+    <div class="dropdown-content">
+      <a href="insertReservation.html">Insert Reservation</a>
+      <a href="updateReservations.html">Update Reservation</a>
+      <a href="searchReservations.html">Search Reservations</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Orders
+    </button>
+    <div class="dropdown-content">
+      <a href="insertOrders.html">Insert Order</a>
+      <a href="updateOrders.html">Update Orders</a>
+      <a href="SearchOrders.html">Search Orders</a>
+    </div>
+  </div>
+  <a href='Signin.html'>Log Out</a>
+</div>
+<body>
+  <form id="UpdateReservationForm">
+        <table>
+          <tr>
+            <th>Reservation Id</th>
+            <td><input type="text" name="reservationId" id="reservationId"
+            value = ""	/></td><td><span id="errMessageId"></span></td>
+          </tr>
+            <tr>
+                <th>Reservation Room Number</th>
+                <td><select name="roomNumber" id="roomNumber"><option value = ""></option></select></td>
+                <td><span id="errMessageNumber"></span></td>
+            </tr>
+            <tr>
+                <th>Day</th>
+                <td><input type="date" name="reservationDay" id="reservationDay"
+                value = ""	/></td><td><span id="errMessageDay"></span></td>
+            </tr>
+            <tr>
+                <th>Time</th>
+                <td><input type="time" name="reservationTime" id="reservationTime"
+                value = ""	/></td><td><span id="errMessageTime"></span></td>
+            </tr>
+            <tr>
+                <th>Trainer</th>
+                <td><select name="reservationTrainer" id="reservationTrainer"><option value = ""></option>
+                </select></td><td><span id="errMessageTrainer"></span></td>
+          </tr>
+          <tr>
+            <th>Client</th>
+            <td><select name="reservationClient" id="reservationClient"><option value = ""></option>
+            </select></td><td><span id="errMessageClient"></span></td>
+      </tr>
+        </table><br><br>
+        <input type="submit" name = "thesubmit" value="Update" class = "button">
+</form>
+<br><br>
+<section id="searchResults">
+  <table id = allReservationResults>
+      <th>Reservation Id</th>
+      <th>Room Number</th>
+      <th>Reservation Date</th>
+      <th>Reservation Time</th>
+      <th>Trainer</th>
+      <th>Client</th>
+      <th>Select or Delete Reservation</th>
+  </table>
+</section>
+</body>
+</html>

@@ -1,0 +1,59 @@
+#allItemResults td {
+    padding: 5px;
+    border: solid black;
+    border-width: 0 2px;
+    border-radius: 10%;
+}
+
+.itemChange {
+    padding: 10px 25px;
+    line-height: 1.25;
+    background: #3f704d;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    transition: background-color .6s ease;
+}
+
+.itemDelete {
+    padding: 10px 25px;
+    line-height: 1.25;
+    background: red;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    transition: background-color .6s ease;
+}
+
+#UpdateMenuItemForm, #allItemResults {
+    margin-top: 40px;
+    border: 10px solid #3f704d;
+  border-radius: 50px;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.button {
+    background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 10px;
+    border-radius: 12px;
+}
+
+input, select {
+    margin: 2px;
+    border-radius: 8px;
+    font-size: 22px;
+} 
+
+.button:hover {background-color: grey;}

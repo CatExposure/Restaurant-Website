@@ -1,0 +1,91 @@
+#allOrderResults td, #allOrderItemsResults td {
+    padding: 5px;
+    border: solid black;
+    border-width: 0 2px;
+    border-radius: 10%;
+}
+
+.orderChange, .orderItemChange {
+    padding: 10px 25px;
+    line-height: 1.25;
+    background: #3f704d;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    transition: background-color .6s ease;
+    border-radius: 8px;
+    margin-right: 2px;
+}
+
+.orderDelete, .orderItemDelete{
+    padding: 10px 25px;
+    line-height: 1.25;
+    background: red;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    transition: background-color .6s ease;
+    border-radius: 8px;
+}
+
+#UpdateOrderForm, #UpdateOrderItem, #allOrderResults, #allOrderItemsResults {
+    margin-top: 40px;
+    border: 10px solid #3f704d;
+  border-radius: 50px;
+  font-size: 22px;
+  padding: 10px;
+}
+
+#UpdateOrderForm, #UpdateOrderItem {
+    position: absolute;
+    width: 600px;
+}
+
+#UpdateOrderForm{
+    margin-top: 60px;
+}
+
+#UpdateOrderItem { 
+    margin-top: 500px;
+}
+
+#allOrderResultsTables {
+    width: 1400px;
+    float: right;
+    height: 100%;
+}
+
+#allOrderResults {
+    float: right;
+    width: 1200px;
+}
+
+#allOrderItemsResults {
+    float: right;
+    margin-top: 50px;
+}
+
+.button {
+    background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 10px;
+    border-radius: 12px;
+}
+
+input, select {
+    margin: 2px;
+    border-radius: 8px;
+    font-size: 22px;
+} 
+
+.button:hover {background-color: grey;}

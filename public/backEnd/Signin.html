@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+    <link rel="stylesheet" href="styles/signin.css" defer>
+    <link rel="stylesheet" href="../styles/general.css" defer>
+    <script src="scripts/signIn.js" defer></script>
+</head>
+<section id="topArea">
+    <img id = "backEndLogo" src="images/logo.png">
+    <h1 id = "topAreaText">Perk Up Coffee Bar Faculty View<h1>
+</section>
+<br>
+<body>
+    <form method="post" id ="signInForm" name="signIn">
+            <table>
+                <tr>
+                    <th>E-mail</th>
+                    <td><input type="text" name="email" id="email"
+                    value = ""	></td><td><span id="errMessageEmail"></span></td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td><input type="password" name="pwd" id="pwd"
+                    value = ""	></td><td><span id="errMessagePassword"></span></td>
+                </tr>
+            </table><br><br>
+            <input type="submit" name = "thesubmit" value="Enter">
+    </form>
+</body>
+</html>
